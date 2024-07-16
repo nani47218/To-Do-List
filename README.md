@@ -1,1 +1,50 @@
-# To-Do-List
+Todo List Application
+A simple, interactive todo list application built using HTML, CSS, and JavaScript. This application allows users to add, edit, delete, and mark tasks as done. It also alerts users when a task is overdue and highlights overdue tasks.
+
+Features
+Add Todo: Users can add new todo items with a name, due date, and time.
+Edit Todo: Users can edit existing todo items.
+Delete Todo: Users can delete todo items.
+Mark as Done: Users can mark todo items as done, which removes them from the list.
+Overdue Alerts: The application alerts users when a todo item is overdue and highlights overdue tasks in red.
+Live Demo
+Check out the live demo here.
+
+Usage
+Adding a Todo
+Enter the todo name in the input field.
+Select the due date and time.
+Click the "Add Todo" button.
+Editing a Todo
+Click the "Edit" button next to the todo item you want to edit.
+Update the name, date, and time in the input fields.
+The todo item will be updated and the list will be refreshed.
+Deleting a Todo
+Click the "Delete" button next to the todo item you want to remove.
+The todo item will be removed from the list.
+Marking a Todo as Done
+Click the "Mark as Done" button next to the todo item you want to mark as done.
+The todo item will be removed from the list.
+
+
+Code Structure
+
+HTML
+
+The HTML file contains the structure of the todo list application. The main elements include input fields for the todo name, due date, and time, as well as buttons for adding, editing, deleting, and marking todo items as done.
+
+CSS
+
+The CSS file styles the todo list application. It includes styles for the todo items, buttons, and overdue alerts. The "Mark as Done" button is styled with an embedded SVG icon.
+
+JavaScript
+
+The JavaScript file contains the logic for adding, editing, deleting, and marking todo items as done. It also handles overdue alerts and updates the todo list display dynamically.
+
+Key Functions
+
+renderTodoList(): Renders the todo list and checks for overdue items.
+editTodo(): Edits a specified todo item.
+deleteTodo(): Deletes a specified todo item.
+markAsDone(): Marks a specified todo item as done and removes it from the list.
+addTodo(): Adds a new todo item to the list.
