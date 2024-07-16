@@ -44,7 +44,11 @@ The JavaScript file contains the logic for adding, editing, deleting, and markin
 Key Functions
 
 renderTodoList(): Renders the todo list and checks for overdue items.
+
 editTodo(): Edits a specified todo item.
+
 deleteTodo(): Deletes a specified todo item.
+
 markAsDone(): Marks a specified todo item as done and removes it from the list.
+
 addTodo(): Adds a new todo item to the list.
