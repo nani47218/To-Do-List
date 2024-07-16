@@ -1,0 +1,227 @@
+
+body {
+    font-family: Arial;
+  }
+  
+  .to-do {
+    text-align: center;
+    padding-right:1000px;
+  }
+  
+  .todo-grid,
+  .todo-input-grid {
+    display: grid;
+    grid-template-columns: auto; 
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+  }
+  
+  .todo-input-grid {
+    margin-bottom: 20px;
+  }
+  
+  .name-input,
+  .due-date-input,
+  .due-time {
+    font-size: 15px;
+    padding-right: 10px;
+    width: 110px; 
+    height: 30px; 
+  }
+  .js-name-input::placeholder {
+    color: black;
+    font-size: small;
+  }
+  
+  .add-todo-button,
+  .delete-todo-button,
+  .js-add-todo {
+    background-image: linear-gradient(to right, white, rgb(31, 166, 211));
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .delete-todo-button {
+    background-image: linear-gradient(to right red);
+    width: 100px; 
+    height:52px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  .edit-todo-button,
+  .delete-todo-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .edit-todo-button:hover,
+  .delete-todo-button:hover {
+    background-color: #e0e0e0;
+  }
+  .edit-todo-button {
+    margin-left: 10px; 
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, orange, #51df58); /* Adjust colors as needed */
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .edit-todo-button:hover {
+    background-color: #b99bae; 
+  }
+  .name-input-text, .date-input-text, .time-input-text {
+    width:120px;
+    height:45px;
+    margin-right:15px;
+    margin-left:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    color:black;
+    text-size-adjust:20px;
+    position: relative;
+    top: -13px;
+  }
+  .edit-todo-button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  .edit-todo-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  .edit-todo-button:active {
+    color: #000;
+  }
+  .edit-todo-button:active:after {
+    background: transparent;
+  }
+  .edit-todo-button:hover:before {
+    opacity: 1;
+  }
+  .edit-todo-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 112, 179);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+  
+  .js-add-todo {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px; 
+    color: #fff;
+    font-size: 24px;
+    text-transform: Pascalcase; 
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center; 
+  }
+  
+  .js-add-todo:hover {
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  .js-add-todo:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .js-add-todo:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 5s linear infinite;
+  }
+
+  .mark-as-done-button {
+    width:70px;
+    height:50px;
+    color:white;
+    background-color:rgb(194, 21, 21);
+    border-radius:10px; 
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .mark-as-done-button, .edit-todo-button, .delete-todo-button {
+    padding:10px;
+    margin-left: 30px;
+    margin-left:30px;
+  }
+ 
+  
+  
+  
+  
