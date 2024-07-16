@@ -1,5 +1,8 @@
 Todo List Application
-A simple, interactive todo list application built using HTML, CSS, and JavaScript. This application allows users to add, edit, delete, and mark tasks as done. It also alerts users when a task is overdue and highlights overdue tasks.
+
+A simple, interactive todo list application built using HTML, CSS, and JavaScript. 
+This application allows users to add, edit, delete, and mark tasks as done. 
+It also alerts users when a task is overdue and highlights overdue tasks.
 
 Features
 Add Todo: Users can add new todo items with a name, due date, and time.
