@@ -1,3 +1,5 @@
+**Live Demo**:https://nani47218.github.io/To-Do-List/.
+
 _**Todo List Application**_
 
 A simple, interactive todo list application built using HTML, CSS, and JavaScript. 
@@ -18,24 +20,34 @@ Mark as Done: Users can mark todo items as done, which removes them from the lis
 
 Overdue Alerts: The application alerts users when a todo item is overdue and highlights overdue tasks in red.
 
-**Live Demo**:https://nani47218.github.io/To-Do-List/.
-
 **Usage**__
-Adding a Todo
+_Adding a Todo_
+
 Enter the todo name in the input field.
+
 Select the due date and time.
+
 Click the "Add Todo" button.
-Editing a Todo
+
+_Editing a Todo_
+
 Click the "Edit" button next to the todo item you want to edit.
+
 Update the name, date, and time in the input fields.
+
 The todo item will be updated and the list will be refreshed.
-Deleting a Todo
+
+_Deleting a Todo_
+
 Click the "Delete" button next to the todo item you want to remove.
-The todo item will be removed from the list.
-Marking a Todo as Done
-Click the "Mark as Done" button next to the todo item you want to mark as done.
+
 The todo item will be removed from the list.
 
+_Marking a Todo as Done_
+
+Click the "Mark as Done" button next to the todo item you want to mark as done.
+
+The todo item will be removed from the list.
 
 **Code Structure**
 
