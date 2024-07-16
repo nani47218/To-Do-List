@@ -21,6 +21,7 @@ Mark as Done: Users can mark todo items as done, which removes them from the lis
 Overdue Alerts: The application alerts users when a todo item is overdue and highlights overdue tasks in red.
 
 **Usage**__
+
 _Adding a Todo_
 
 Enter the todo name in the input field.
